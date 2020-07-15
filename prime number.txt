@@ -1,0 +1,14 @@
+n=int(input("Please enter a number"))
+if n<=1:
+    print(n, "is not a prime number")
+else:
+    for i in range(2, n+1):
+        if n%i==0 and n!=i:
+            count=False
+            break
+        else:
+            count=True
+    if count==True:
+        print(n, "is a Prime_number")
+    else:
+        print(n, "is not a Prime_number")
