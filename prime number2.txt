@@ -1,0 +1,12 @@
+prime_number = []
+n = 100
+for i in range(2, n+1):
+    for j in range(2, j+1):
+        if i%j==0 and i!=j:
+            count=False
+            break
+        else:
+            count=True
+            if count==True:
+                prime_number.append(i) 
+print(prime_number)    
